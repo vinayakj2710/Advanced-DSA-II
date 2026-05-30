@@ -19,6 +19,7 @@ public class ListNodePairs {
             ListNode first = prev.next;
             ListNode second = prev.next.next;
 
+        // swap nodes
             first.next = second.next;
             second.next = first;
             prev.next = second;
